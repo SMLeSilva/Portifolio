@@ -1,11 +1,13 @@
 // NAVBAR 
+let navbar__width = document.querySelector('#navbar')
 
 window.addEventListener("scroll", function () {
-    let navbar__width = document.querySelector('#navbar')
-    navbar__width.timeout = setTimeout(function () {
-        navbar__width.classList.toggle('width100', window.scrollY > 10);
-    }, 2000);
-})
+    if (window.scrollY > 10) {
+        navbar.classList.add('width100_border__bottom');
+    } else {
+        navbar.classList.remove('width100_border__bottom');
+    }
+});
 
 // SLIDER ABOUT 
 

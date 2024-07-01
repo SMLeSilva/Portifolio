@@ -2,7 +2,7 @@
     position: fixed;
     width: 95%;
     height: 10vh;
-    background: linear-gradient(to left,  #0c0c0c 65%,#13132e);
+    background: #000000;
     border-radius: 0px 50px 50px 0px;
     overflow: hidden;
     transition: 0.5s;
@@ -11,11 +11,16 @@
     justify-content: space-between;
     padding: 0% 2% 0 2%;
     align-items: center;
+    border-bottom: 5px solid transparent;
+    box-shadow: 5px 5px 5px 0px rgba(48, 48, 48, 0.5);
 }
 
-#navbar.width100 {
+#navbar.width100_border__bottom {
     width: 100%;
     border-radius: 0;
+    border-bottom: 5px solid #eae200;
+    height: calc(10vh + 5px);
+    box-shadow: none;
 }
 
 #navbar a {

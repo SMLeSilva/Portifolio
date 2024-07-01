@@ -1,6 +1,6 @@
 .background__header {
-  height: 90vh;
-  background: #111111;
+  height: 100vh;
+  background: #020202;
   overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
   height: 35px;
   list-style: none;
   opacity: 0;
-  background: radial-gradient(deepskyblue, transparent, transparent);
+  background: radial-gradient(#eae200, transparent, transparent);
   bottom: 0;
   left: 10vw;
   animation: animate 15s linear infinite;
@@ -45,6 +45,10 @@
   animation-delay: 4s;
 }
 
+.background__pointers ul li:nth-child(6){
+  left: 5vw;
+  animation-delay: 5s;
+}
 
 @keyframes animate {
   0%{

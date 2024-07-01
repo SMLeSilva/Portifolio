@@ -2,4 +2,11 @@
     height: 60vh;
     width: 100%;
     background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+#projects h3{
+    padding-top: 20px;
+    color: aliceblue;   
 }
