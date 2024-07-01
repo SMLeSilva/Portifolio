@@ -6,7 +6,6 @@
     border-radius: 0px 50px 50px 0px;
     overflow: hidden;
     transition: 0.5s;
-    animation: nav__bar_width 2s ease 1;
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -109,14 +108,3 @@
 }
 
 /*--- FIM Checkbox DARk/LIGHT ---*/
-
-
-@keyframes nav__bar_width {
-    0% {
-        width: 10%;
-    }
-
-    100% {
-        width: 95%;
-    }
-}
