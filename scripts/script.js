@@ -10,18 +10,19 @@ window.addEventListener("scroll", function () {
 });
 
 // DARK LIGHT
+document.addEventListener('DOMContentLoaded', function() {
+    const checkbox_dark_light = document.getElementById('checkbox_dark_light');
+    const dark_light_mask = document.querySelector('#navbar .checkbox_dark_light_container .dark_light_mask');
 
-const check__box__dark__light = document.getElementById('checkbox__moon__switch')
+    checkbox_dark_light.addEventListener('change', switch_moon);
 
-check__box__dark__light.addEventListener('change', switch__moon())
-
-function switch__moon(){
-    if(check__box__dark__light.checked){
-       
-    }else{
-
+    function switch_moon() {
+        if (checkbox_dark_light.checked) {
+            dark_light_mask.classList.add('mask');
+        } else {
+            dark_light_mask.classList.remove('mask');
+        }
     }
-}
-
+});
 // Barra lateral
 

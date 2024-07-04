@@ -1,34 +1,28 @@
 #navbar{
     position: fixed;
-    width: 95%;
+    width: 91%;
     height: 10vh;
     background: #000000;
     border-radius: 0px 50px 50px 0px;
-    overflow: hidden;
     transition: 0.5s;
-    z-index: 10;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
-    padding: 0% 2% 0 2%;
+    padding: 0 2%;
     align-items: center;
-    border-bottom: 5px solid transparent;
+    border-bottom: 0 solid transparent;
     box-shadow: 5px 5px 5px 0px rgba(48, 48, 48, 0.5);
 }
 
 #navbar.width100_border__bottom {
-    width: 100%;
+    width: 96%;
     border-radius: 0;
     border-bottom: 5px solid #eae200;
     height: calc(10vh + 5px);
     box-shadow: none;
 }
 
-#navbar a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-/*--- NavBar ELEMENTS ---*/
+/* NAVBAR ELEMENTOS */
 
 #navbar .navbar__logo {
     font-family: "Tiny5", sans-serif;
@@ -38,87 +32,52 @@
 #navbar .navbar__links {
     display: flex;
     align-items: center;
-    margin: 0;
-}
-
-#navbar .navbar__links li {
-    display: inline-block;
 }
 
 #navbar .navbar__links li:not(:last-of-type) {
     margin-right: 2rem;
 }
 
-#navbar .navbar__links a svg{
-    width: 28px;
-    height: 28px;
-}
-
-#navbar .navbar__links a svg{
-    width: 28px;
-    height: 28px;
-}
-
 #navbar .navbar__links a .bi{
     font-size: 28px;
 }
 
-/*--- FIM NavBar ELEMENTS ---*/
+#navbar .navbar__links a .bi-github{
+    font-size: 30px;
+}
 
-/*--- Checkbox DARk/LIGHT ---*/
+/* DARK LIGHT */
 
-#navbar .navbar__links .checkbox {
-    width: 30px;
-    height: 30px;
+#navbar .checkbox_dark_light_container {
     position: relative;
-    margin-top: 5px;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: aliceblue;
 }
 
-#navbar .checkbox__moon {
-    color: aliceblue;
-}
-
-#navbar .checkbox__moon__btn {
-    position: relative;
-    cursor: pointer;
-}
-
-#navbar .checkbox__moon__btn .checkbox {
+#navbar #checkbox_dark_light {
     opacity: 0;
-    width: 100%;
-    aspect-ratio: 1;
-
-}
-
-#navbar .checkbox__moon__btn svg {
     position: absolute;
-    left: 0;
     width: 100%;
     height: 100%;
-    transition: transform 0.4s ease;
-    transform: rotate(40deg);
+    cursor: pointer;
 }
 
-#navbar .Sun svg {
+#navbar .checkbox_dark_light_container .dark_light_mask{
     position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease;
-    transform: rotate(40deg);
+    width: 27px;
+    height: 27px;
+    left: 25%;
+    top: -25%;
+    border-radius: 50%;
+    background: #000;
+    transition: 0.5s;
 }
 
-#navbar .checkbox__moon__btn svg mask>circle {
-    transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
-    transform: translate(0px, 0px);
+#navbar .checkbox_dark_light_container .dark_light_mask.mask{
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 50%;
 }
-
-#navbar .checkbox__moon__btn .checkbox:checked+svg mask>circle {
-    transform: translate(16px, -3px);
-}
-
-/*--- FIM Checkbox DARk/LIGHT ---*/

@@ -1,97 +1,80 @@
-.header {
-    width: 100%;
-    height: 90vh;
-    position: relative;
-}
-
 .header .header__left {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
     width: 50%;
-    height: 100%;
-
+    height: 90%;
+    padding-top: 24vh;
+    padding-left: 10vh;
 }
 
 .header .header__left .bem__vindo {
     display: flex;
-    margin: 24vh 0 0 10vh;
     width: 60%;
     height: 6vh;
     font-size: 25px;
     color: aliceblue;
     align-items: center;
     justify-content: center;
-    border: solid;
-    border-width: 2px;
-    border-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .header .header__left .titulo {
-    margin: 5vh 0 0 10vh;
+    margin-top: 5vh;
     color: aliceblue;
     font-size: 40px;
-    width: 85%;
+    width: 90%;
 }
 
-.header .header__left .titulo .titulo__collor{
+.header .header__left .titulo .titulo__collor {
     color: #eae200;
 }
 
 .header .header__left .header__sobre {
-    margin: 5vh 0 0 10vh;
+    margin-top: 5vh;
     color: aliceblue;
     width: 90%;
     font-size: 20px;
 }
 
-.header .header__left .header__sobre a{
-    color: aliceblue;
-    text-decoration: none;
-
-}
-
-.header .header__left .header__sobre a:hover{
+.header .header__left .header__sobre a:hover {
     color: #e2db00;
-
 }
 
 .header .header__right {
+    position: absolute;
     top: 0;
     left: 50%;
-    position: absolute;
     display: flex;
     width: 50%;
     height: 100%;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-.header .header__right img{
+.header .header__right img {
     margin-top: 120px;
     width: 700px;
     mask-image: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(255, 0, 0, 0) 90%);
 }
 
-.header .next__section{
-    width: 45px;
-    height: 45px;
+.header .bi-chevron-double-down {
+    font-size: 45px;
     position: absolute;
     color: #fff;
     left: 50%;
-    top: 100%;
+    top: 91%;
     transform: translate(-50%, -50%);
     animation: arrow 1s ease-in-out infinite alternate;
-
 }
 
 @keyframes arrow {
     0% {
-        top: 98%;
+        top: 91%;
     }
 
     100% {
-      top: 100%;
+        top: 93%;
     }
-  }
-  
+}
