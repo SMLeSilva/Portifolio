@@ -1,7 +1,7 @@
 #projects{
     height: 60vh;
     width: 100%;
-    background: #000;
+    background: #ff0000;
     display: flex;
     justify-content: center;
 }

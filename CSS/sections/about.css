@@ -1,102 +1,40 @@
 #about {
-    position: relative;
-    display: flex;
-    justify-content: center;
     width: 100%;
-    height: 70vh;
-    background: #111;
+    height: 60vh;
+    background: #020202;
     scroll-margin-top: 22vh;
 }
 
-#about .slider__about__me{
+#about .about_title{
     position: relative;
-    width: 60rem;
-    height: 24.8rem;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: -5px 10px 25px 0px rgba(48, 48, 48, 0.5);
-    transition: 1.8s; 
-}
-
-#about .about__me__1 {
-    padding-top: 20px;
-    width: 60rem;
-    height: 24.8rem;
-    border-radius: 40px;
-    background: radial-gradient(circle, rgb(10, 10, 10), #090909);
-    color: aliceblue;
-}
-
-#about .about__me__1 h3{
     display: flex;
+    width: 100%;
+    height: 10vh;
     justify-content: center;
-    font-size: 30px;
-}
-
-#about .about__me__1 ul li{
-    font-size: 25px;
-    width: 96%;
-    border-radius: 10px 10px 10px 10px;
-    margin: 30px 0;
-    padding-left: 10px;
-    background: #181818;
-    list-style: none;
-}
-
-#about .about__me__2 {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 60rem;
-    height: 24.8rem;
-    border-radius: 40px;
-    background: radial-gradient(circle, rgb(10, 10, 10), #090909);
+    align-items: center;
     color: aliceblue;
-    transition: 0.4s; 
+    font-size: 20px;
 }
-
-#about .about__me__2 h3{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
-
-#about button > svg{
+#about .about_title hr{
     position: absolute;
+    border: 1px solid aliceblue;
+    width: 25vh;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px; 
-    color: #ffffff;   
+}
+#about .about_menu{
+    width: 100%;
+    height: 50vh;
+    background: #020202;
 }
 
-#about button {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: #191919;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
+#about .about_menu .about_menu_slider{
+    width: 40%;
+    height: 50vh;
+    background: #eae200;
 }
 
-
-#about button:hover {
-    background: #0e0e0e;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-#about .container__designer {
-    position: absolute;
-    width: 65%;
-    height: 90%;
-    background: linear-gradient(to left, #0d0d0d 85%, #111111);
-    top: 10%;
-    left: 35%;
+#about .about_menu .about_menu_slider ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

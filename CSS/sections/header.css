@@ -81,4 +81,17 @@
     left: 50%;
     top: 100%;
     transform: translate(-50%, -50%);
+    animation: arrow 1s ease-in-out infinite alternate;
+
 }
+
+@keyframes arrow {
+    0% {
+        top: 98%;
+    }
+
+    100% {
+      top: 100%;
+    }
+  }
+  

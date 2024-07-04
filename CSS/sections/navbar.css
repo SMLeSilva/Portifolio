@@ -49,9 +49,18 @@
     margin-right: 2rem;
 }
 
-#navbar .navbar__links a svg {
+#navbar .navbar__links a svg{
     width: 28px;
     height: 28px;
+}
+
+#navbar .navbar__links a svg{
+    width: 28px;
+    height: 28px;
+}
+
+#navbar .navbar__links a .bi{
+    font-size: 28px;
 }
 
 /*--- FIM NavBar ELEMENTS ---*/

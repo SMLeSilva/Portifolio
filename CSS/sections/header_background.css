@@ -4,11 +4,11 @@
   overflow: hidden;
 }
 
-.background__pointers ul{
+.background__header .background__pointers ul{
   margin: 0;
 }
 
-.background__pointers ul li{
+.background__header .background__pointers ul li{
   position: absolute;
   width: 35px;
   height: 35px;
@@ -20,32 +20,32 @@
   animation: animate 15s linear infinite;
 }
 
-.background__pointers ul li:nth-child(1){
+.background__header .background__pointers ul li:nth-child(1){
   left: 45vw;
   animation-delay: 8s;
 }
 
-.background__pointers ul li:nth-child(2){
+.background__header .background__pointers ul li:nth-child(2){
   left: 37vw;
   animation-delay: 2s;
 }
 
-.background__pointers ul li:nth-child(3){
+.background__header .background__pointers ul li:nth-child(3){
   left: 25vw;
   animation-delay: 3.5s;
 }
 
-.background__pointers ul li:nth-child(4){
+.background__header .background__pointers ul li:nth-child(4){
   left: 60vw;
   animation-delay: 6s;
 }
 
-.background__pointers ul li:nth-child(5){
+.background__header .background__pointers ul li:nth-child(5){
   left: 75vw;
   animation-delay: 4s;
 }
 
-.background__pointers ul li:nth-child(6){
+.background__header .background__pointers ul li:nth-child(6){
   left: 5vw;
   animation-delay: 5s;
 }
